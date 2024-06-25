@@ -6,7 +6,8 @@ import './index.css'
 class Appointments extends Component {
   state = {
     appointmentsList: [
-      /*  {
+      /* This was for testing purpose only 
+      {
         id: 1,
         title: 'Lecturer',
         date: new Date(),
@@ -85,8 +86,7 @@ class Appointments extends Component {
     const staredAndUnstaredAppointmentList = isStarFilterSelected
       ? appointmentsList.filter(eachAppointment => eachAppointment.isStared)
       : appointmentsList
-    const d = new Date().toLocaleDateString()
-    console.log(d)
+
     return (
       <div className="bg-container">
         <div className="appointment-container">
@@ -111,6 +111,7 @@ class Appointments extends Component {
                   value={date}
                   onChange={this.onDateChange}
                   type="date"
+                  required
                 />
               </label>
 
