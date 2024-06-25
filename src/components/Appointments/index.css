@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg-container {
+  background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh;
+}
+.appointment-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 100%;
+  padding: 4vw;
+}
+
+.add-appointment-form-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-appointment-heading {
+  font-family: 'Roboto';
+  font-size: 36px;
+  margin: 20px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  margin: 20px 0px;
+}
+label {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  color: #b5b7c4;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 40px;
+  max-width: 600px;
+  padding: 10px 15px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px;
+  margin-top: 5px;
+}
+
+.add-btn {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #8b5cf6;
+  max-width: 75px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.appointments-img {
+  width: 35%;
+}
+
+hr {
+  border: #b5b7c4 solid 1px;
+  margin: 20px 0px;
+}
+.appointment-and-star-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+.stared-appointments-heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+.unselected-star-filter-btn {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  color: #9897f0;
+  border: #9897f0 solid 2px;
+  border-radius: 18px;
+  background: none;
+  padding: 5px 20px;
+  outline: none;
+  cursor: pointer;
+}
+.selected-star-filter-btn {
+  background-color: #9796f0;
+  color: #ffffff;
+}
+
+.appointments-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  form {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  .add-appointment-form-card {
+    justify-content: center;
+  }
+  .add-appointment-heading {
+    font-size: 30px;
+  }
+  .appointments-img {
+    display: none;
+  }
+  .stared-appointments-heading {
+    font-size: 24px;
+  }
+  .stared-btn {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+  .appointments-list {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,36 @@
+/* Write your CSS here */
+.list-card {
+  border: solid 1px #171f46;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0px 25px 25px 0px;
+  width: 300px;
+}
+.title-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+}
+.star-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.date {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  color: #b5b7c4;
+}
+
+@media screen and (max-width: 768px) {
+  .list-card {
+    margin: 15px;
+  }
+}
