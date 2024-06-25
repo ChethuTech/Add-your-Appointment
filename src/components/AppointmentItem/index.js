@@ -18,7 +18,6 @@ const AppointmentItem = props => {
           type="button"
           onClick={starTheBtn}
           className="star-btn"
-          data-testid="star"
         >
           {' '}
           <img
